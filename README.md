@@ -37,7 +37,7 @@ Eenmaal de teams gemaakt zijn en iedereen het spel snapt kan het spel beginnen. 
 
 Op dit moment van het spel zijn enkel de districten die in de buitenste band liggen ontsloten. Alle teams proberen dan zoveel mogelijk districten te veroveren, want als er een bepaald deel van alle districten veroverd zijn sluit de buitenste cirkel definitief. Op hetzelfde moment wordt de 2de band ontsloten, zodat de teams daar punten kunnen gaan scoren. Dit doen ze op dezelfde manier als in de 1ste band, door het oplossen van de opdrachten uniek aan het district. Enkel krijgen de teams nu iets meer punten als in de vorige band. Dit proces van vergrendelen en ontgrendelen van banden wordt nog 1 maal uitgevoerd voor alle teams naar het centrale district moeten.
 
-In het centrale district gaat er nog een gezamenlijke opdracht zijn waar de teams rechtstreek tegen elkaar moeten spelen voor heel wat punten. 
+In het centrale district gaat er nog een gezamenlijke opdracht zijn waar de teams rechtstreeks tegen elkaar moeten spelen voor heel wat punten. 
 Het team die na dit spel het meeste punten heeft is de winnaar van het spel.
 
 ### Secundaire opdrachten:
