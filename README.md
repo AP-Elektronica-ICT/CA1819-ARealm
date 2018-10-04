@@ -12,7 +12,7 @@ CA1819-ARealm, project door:
 
 **Doelgroep**: Kinderen 13-16 jaar.
 
-**Aantal spelers**: 2-4 teams van max. 3 spelers.
+**Aantal spelers**: 2-4 teams van max. 5 spelers.
 
 ### Speelgebied:
 
