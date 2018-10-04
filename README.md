@@ -1,8 +1,13 @@
-CA1819-ARealm
+CA1819-ARealm, project door:
+
+*Joris van Looy*
+
+*Wouter Huygen*
+
+*Robbe Vermeire*
 
 # ARealm: Turfwars in Antwerpen.
 *Deze sectie is bedoelt voor een beschrijving van ons spel.*
-
 *ARealm is een spel dat in elke stad gespeeld kan worden, maar voor ons project en MVP gaan we ons spitsen op enkel Antwerpen.*
 
 **Doelgroep**: Kinderen 13-16 jaar.
