@@ -43,3 +43,11 @@ Het team die na dit spel het meeste punten heeft is de winnaar van het spel.
 ### Secundaire opdrachten:
 Dit is een mogelijke uitbreiding op het spel. We geven de teams doorheen het spel kleine opdrachten waartoe ze altijd kunnen bijdragen, onafhankelijk van in welk district ze zitten. Denk aan zoveel mogelijk foto’s trekken van gele auto’s, een kat en muis spel tegen een ander team. De mogelijkheden zijn praktisch oneindig en worden enkel gelimiteerd door onze creativiteit.
 
+# Software Architectuur
+
+Foto Algemene Architectuur:
+![Algemene Architectuur](https://github.com/AP-Elektronica-ICT/CA1819-ARealm/img/Software Architectuur.png "Algemene Architectuur")
+
+Frontend : Onze applicatie, Ionic
+Web API: Hier komen al onze calls binnen afkomstig van de frontend,
+
