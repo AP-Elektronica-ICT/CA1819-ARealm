@@ -49,7 +49,11 @@ Foto Algemene Architectuur:
 ![Algemene Architectuur](https://github.com/AP-Elektronica-ICT/CA1819-ARealm/blob/master/img/Software%20Architectuur.png)
 
 Frontend : Onze applicatie, Ionic of Unity.
+
 Web API: Hier komen al onze calls binnen afkomstig van de frontend, ASP NET MVC core.
+
 Services: Business Logic, ASP NET MVC core.
+
 Repository: Calls naar Database, Entity Framework.
+
 Database: Azure database.
