@@ -57,3 +57,6 @@ Services: Business Logic, ASP NET MVC core.
 Repository: Calls naar Database, Entity Framework.
 
 Database: Azure database.
+
+Layered Architectuur:
+![Layered Architectuur](https://github.com/AP-Elektronica-ICT/CA1819-ARealm/blob/master/img/Software%20Architecture.png)
