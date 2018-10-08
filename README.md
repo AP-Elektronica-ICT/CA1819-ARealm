@@ -46,8 +46,14 @@ Dit is een mogelijke uitbreiding op het spel. We geven de teams doorheen het spe
 # Software Architectuur
 
 Foto Algemene Architectuur:
-![Algemene Architectuur](https://github.com/AP-Elektronica-ICT/CA1819-ARealm/img/Software Architectuur.png "Algemene Architectuur")
+![Algemene Architectuur](https://github.com/AP-Elektronica-ICT/CA1819-ARealm/blob/master/img/Software%20Architectuur.png)
 
-Frontend : Onze applicatie, Ionic
-Web API: Hier komen al onze calls binnen afkomstig van de frontend,
+Frontend : Onze applicatie, Ionic of Unity.
 
+Web API: Hier komen al onze calls binnen afkomstig van de frontend, ASP NET MVC core.
+
+Services: Business Logic, ASP NET MVC core.
+
+Repository: Calls naar Database, Entity Framework.
+
+Database: Azure database.
