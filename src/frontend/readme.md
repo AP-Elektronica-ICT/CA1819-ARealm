@@ -1,0 +1,1 @@
+This map contains all source code for the frontend of our application.
