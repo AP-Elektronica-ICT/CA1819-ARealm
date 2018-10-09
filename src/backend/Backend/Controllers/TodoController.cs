@@ -5,31 +5,23 @@ using Models;
 
 namespace Controllers
 {
-    [Route("api/[controller]")] // /api/todo
+    [Route("api/todo")] // /api/todo
     public class TodoController : ControllerBase
     {
-        private readonly TodoContext _context;
+        private readonly CollectionContext _context;
 
-        public TodoController(TodoContext context)
+        public TodoController(CollectionContext context)
         {
             _context = context;
-
-            if (_context.TodoItems.Count() == 0)
-            {
-                // Create a new TodoItem if collection is empty,
-                // which means you can't delete all TodoItems.
-                _context.TodoItems.Add(new TodoItem { Name = "Item1" });
-                _context.SaveChanges();
-            }
         }
 
-        [HttpGet]
+        [HttpGet] // /api/todo
         public List<TodoItem> GetAll()
         {
             return _context.TodoItems.ToList();
         }
 
-        [Route("{id}")]
+        [Route("{id}")] // /api/todo/1
         [HttpGet]
         public ActionResult GetById(long id)
         {
@@ -41,7 +33,7 @@ namespace Controllers
             return Ok(item);
         }
 
-        [HttpPut("{id}")]
+        [HttpPut("{id}")] // /api/todo/1 + body
         public IActionResult Update(long id, TodoItem item)
         {
             var todo = _context.TodoItems.Find(id);
@@ -58,7 +50,7 @@ namespace Controllers
 
         }
 
-        [HttpPost]
+        [HttpPost] // /api/todo + body
         public IActionResult Post([FromBody] TodoItem todo)
         {
             _context.TodoItems.Add(todo);
@@ -66,7 +58,7 @@ namespace Controllers
             return Created("", todo);
         }
 
-        [HttpDelete("{id}")]
+        [HttpDelete("{id}")] // /api/todo/1
         public IActionResult Delete(long id)
         {
             var todo = _context.TodoItems.Find(id);
