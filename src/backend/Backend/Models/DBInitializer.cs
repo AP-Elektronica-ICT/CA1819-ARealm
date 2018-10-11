@@ -1,4 +1,6 @@
+using System.Collections.Generic;
 using System.Linq;
+using interfaces;
 using Microsoft.EntityFrameworkCore;
 using Models;
 
@@ -27,8 +29,21 @@ namespace Models
                 context.TodoItems.Add(item1);
                 context.TodoItems2.Add(item2);
                 //save all the changes to the DB
+                context.SaveChanges();         
+            }
+
+            if(!context.Sessions.Any())
+            {
+                var TestSession = new Session
+                {
+                    SessionCode = "TestCode",
+                    Teams = new List<Team>{},
+                    Districts =  new List<District>{},
+                };
+                TestSession.CurrentState= new Active(TestSession);
+
+                context.Sessions.Add(TestSession);
                 context.SaveChanges();
-                
             }
         }
     }

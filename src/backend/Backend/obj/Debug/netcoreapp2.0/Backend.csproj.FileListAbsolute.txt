@@ -18,3 +18,14 @@ c:\Users\joris\school\2019\App Valley\Backend\bin\Debug\netcoreapp2.0\Backend.ru
 c:\Users\joris\school\2019\App Valley\Backend\bin\Debug\netcoreapp2.0\Backend.runtimeconfig.dev.json
 c:\Users\joris\school\2019\App Valley\Backend\bin\Debug\netcoreapp2.0\Backend.dll
 c:\Users\joris\school\2019\App Valley\Backend\bin\Debug\netcoreapp2.0\Backend.pdb
+C:\Users\Robbe\Documents\School\Cloud Applications\CA1819-ARealm\src\backend\Backend\bin\Debug\netcoreapp2.0\Backend.deps.json
+C:\Users\Robbe\Documents\School\Cloud Applications\CA1819-ARealm\src\backend\Backend\bin\Debug\netcoreapp2.0\Backend.runtimeconfig.json
+C:\Users\Robbe\Documents\School\Cloud Applications\CA1819-ARealm\src\backend\Backend\bin\Debug\netcoreapp2.0\Backend.runtimeconfig.dev.json
+C:\Users\Robbe\Documents\School\Cloud Applications\CA1819-ARealm\src\backend\Backend\bin\Debug\netcoreapp2.0\Backend.dll
+C:\Users\Robbe\Documents\School\Cloud Applications\CA1819-ARealm\src\backend\Backend\bin\Debug\netcoreapp2.0\Backend.pdb
+C:\Users\Robbe\Documents\School\Cloud Applications\CA1819-ARealm\src\backend\Backend\obj\Debug\netcoreapp2.0\Backend.csprojAssemblyReference.cache
+C:\Users\Robbe\Documents\School\Cloud Applications\CA1819-ARealm\src\backend\Backend\obj\Debug\netcoreapp2.0\Backend.csproj.CoreCompileInputs.cache
+C:\Users\Robbe\Documents\School\Cloud Applications\CA1819-ARealm\src\backend\Backend\obj\Debug\netcoreapp2.0\Backend.AssemblyInfoInputs.cache
+C:\Users\Robbe\Documents\School\Cloud Applications\CA1819-ARealm\src\backend\Backend\obj\Debug\netcoreapp2.0\Backend.AssemblyInfo.cs
+C:\Users\Robbe\Documents\School\Cloud Applications\CA1819-ARealm\src\backend\Backend\obj\Debug\netcoreapp2.0\Backend.dll
+C:\Users\Robbe\Documents\School\Cloud Applications\CA1819-ARealm\src\backend\Backend\obj\Debug\netcoreapp2.0\Backend.pdb
