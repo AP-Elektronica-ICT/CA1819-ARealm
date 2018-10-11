@@ -46,6 +46,7 @@ Dit is een mogelijke uitbreiding op het spel. We geven de teams doorheen het spe
 # Software Architectuur
 
 Foto Algemene Architectuur:
+
 ![Algemene Architectuur](https://github.com/AP-Elektronica-ICT/CA1819-ARealm/blob/master/doc/img/Software%20Architectuur.png)
 
 Frontend : Onze applicatie, Ionic of Unity.
@@ -58,5 +59,12 @@ Repository: Calls naar Database, Entity Framework.
 
 Database: Azure database.
 
+We gaan heel onze backend, van web API tot de database hosten op Azure cloud services.
+
 Layered Architectuur:
+
 ![Layered Architectuur](https://github.com/AP-Elektronica-ICT/CA1819-ARealm/blob/master/doc/img/Software%20Architecture.png)
+
+#Links
+
+Jira: https://jira.ap.be/secure/RapidBoard.jspa?rapidView=234&projectKey=CA18AR&view=planning&selectedIssue=CA18AR-14&epics=visible
