@@ -47,7 +47,7 @@ Dit is een mogelijke uitbreiding op het spel. We geven de teams doorheen het spe
 
 Foto Algemene Architectuur:
 
-![Algemene Architectuur](https://github.com/AP-Elektronica-ICT/CA1819-ARealm/blob/master/doc/img/Software%20Architectuur.png)
+![Algemene Architectuur](https://github.com/AP-Elektronica-ICT/CA1819-ARealm/blob/master/doc/img/Layered%20Software%20Architecture.png)
 
 Frontend : Onze applicatie, Ionic of Unity.
 
