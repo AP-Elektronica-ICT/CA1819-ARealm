@@ -11,7 +11,6 @@ namespace interfaces
         //kan uitvoeren voor van state te veranderen
         //Vb.: Unlocked --> Captured als team het district captured
     }
-
     public class Unlocked: IDistrictState
     {
         private readonly District district;

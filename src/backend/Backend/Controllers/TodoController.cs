@@ -8,9 +8,9 @@ namespace Controllers
     [Route("api/todo")] // /api/todo
     public class TodoController : ControllerBase
     {
-        private readonly CollectionContext _context;
+        private readonly ARealmContext _context;
 
-        public TodoController(CollectionContext context)
+        public TodoController(ARealmContext context)
         {
             _context = context;
         }

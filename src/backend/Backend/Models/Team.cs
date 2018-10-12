@@ -6,7 +6,9 @@ namespace Models
     public class Team
     {
         public long TeamId{get;set;}
+        
         public long SessionId{get;set;}
+        public Session Session {get;set;}
 
         [NotMapped]        
         public Color TeamColor{get;set;}

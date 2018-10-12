@@ -8,7 +8,7 @@ namespace Models
 {
     public class DBInitializer
     {
-        public static void Initialize(CollectionContext context)
+        public static void Initialize(ARealmContext context)
         {
             //create db if not yet exists
             context.Database.EnsureCreated();
@@ -40,7 +40,7 @@ namespace Models
                     Teams = new List<Team>{},
                     Districts =  new List<District>{},
                 };
-                TestSession.CurrentState= new Active(TestSession);
+                TestSession.CurrentStateString= "Active";
 
                 context.Sessions.Add(TestSession);
                 context.SaveChanges();

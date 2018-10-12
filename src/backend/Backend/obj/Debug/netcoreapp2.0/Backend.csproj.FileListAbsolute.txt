@@ -29,3 +29,14 @@ C:\Users\Robbe\Documents\School\Cloud Applications\CA1819-ARealm\src\backend\Bac
 C:\Users\Robbe\Documents\School\Cloud Applications\CA1819-ARealm\src\backend\Backend\obj\Debug\netcoreapp2.0\Backend.AssemblyInfo.cs
 C:\Users\Robbe\Documents\School\Cloud Applications\CA1819-ARealm\src\backend\Backend\obj\Debug\netcoreapp2.0\Backend.dll
 C:\Users\Robbe\Documents\School\Cloud Applications\CA1819-ARealm\src\backend\Backend\obj\Debug\netcoreapp2.0\Backend.pdb
+C:\Users\Gener\Desktop\Mappen\School\3de jaar (2018-2019)\Cloud Applications\CA1819-ARealm\src\backend\Backend\bin\Debug\netcoreapp2.0\Backend.deps.json
+C:\Users\Gener\Desktop\Mappen\School\3de jaar (2018-2019)\Cloud Applications\CA1819-ARealm\src\backend\Backend\bin\Debug\netcoreapp2.0\Backend.runtimeconfig.json
+C:\Users\Gener\Desktop\Mappen\School\3de jaar (2018-2019)\Cloud Applications\CA1819-ARealm\src\backend\Backend\bin\Debug\netcoreapp2.0\Backend.runtimeconfig.dev.json
+C:\Users\Gener\Desktop\Mappen\School\3de jaar (2018-2019)\Cloud Applications\CA1819-ARealm\src\backend\Backend\bin\Debug\netcoreapp2.0\Backend.dll
+C:\Users\Gener\Desktop\Mappen\School\3de jaar (2018-2019)\Cloud Applications\CA1819-ARealm\src\backend\Backend\bin\Debug\netcoreapp2.0\Backend.pdb
+C:\Users\Gener\Desktop\Mappen\School\3de jaar (2018-2019)\Cloud Applications\CA1819-ARealm\src\backend\Backend\obj\Debug\netcoreapp2.0\Backend.csprojAssemblyReference.cache
+C:\Users\Gener\Desktop\Mappen\School\3de jaar (2018-2019)\Cloud Applications\CA1819-ARealm\src\backend\Backend\obj\Debug\netcoreapp2.0\Backend.csproj.CoreCompileInputs.cache
+C:\Users\Gener\Desktop\Mappen\School\3de jaar (2018-2019)\Cloud Applications\CA1819-ARealm\src\backend\Backend\obj\Debug\netcoreapp2.0\Backend.AssemblyInfoInputs.cache
+C:\Users\Gener\Desktop\Mappen\School\3de jaar (2018-2019)\Cloud Applications\CA1819-ARealm\src\backend\Backend\obj\Debug\netcoreapp2.0\Backend.AssemblyInfo.cs
+C:\Users\Gener\Desktop\Mappen\School\3de jaar (2018-2019)\Cloud Applications\CA1819-ARealm\src\backend\Backend\obj\Debug\netcoreapp2.0\Backend.dll
+C:\Users\Gener\Desktop\Mappen\School\3de jaar (2018-2019)\Cloud Applications\CA1819-ARealm\src\backend\Backend\obj\Debug\netcoreapp2.0\Backend.pdb

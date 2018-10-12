@@ -25,7 +25,7 @@ namespace BackendAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<CollectionContext>(
+            services.AddDbContext<ARealmContext>(
                 options => options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection") //ConnectionString in appsettings.json
                     //**** CHANGE DATABASE NAME IN APPSETTINGS.JOSN ****
@@ -36,7 +36,7 @@ namespace BackendAPI
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-       public void Configure(IApplicationBuilder app, IHostingEnvironment env, CollectionContext collectionContext)
+       public void Configure(IApplicationBuilder app, IHostingEnvironment env, ARealmContext aRealmContext)
         {
             if (env.IsDevelopment())
             {
@@ -48,7 +48,7 @@ namespace BackendAPI
 
             app.UseMvc();
 
-            DBInitializer.Initialize(collectionContext);
+            DBInitializer.Initialize(aRealmContext);
         }
 
     }

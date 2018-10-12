@@ -2,12 +2,19 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Models
 {
-    public class CollectionContext : DbContext
+    public class ARealmContext : DbContext
     {
-        public CollectionContext(DbContextOptions<CollectionContext> options)
+        public ARealmContext(DbContextOptions<ARealmContext> options)
             : base(options)
         {
 
+        }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<District>()
+                .HasOne(district => district.Task)
+                .WithOne(task => task.District)
+                .HasForeignKey<Task>(task => task.DistrictId);
         }
 
         //add database tables
