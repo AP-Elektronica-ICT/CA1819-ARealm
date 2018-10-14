@@ -1,7 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
+using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using Models;
+using Services;
 
 namespace Controllers
 {
@@ -9,23 +11,28 @@ namespace Controllers
     public class TeamController : ControllerBase
     {
         private readonly ARealmContext _context;
-
+        private TeamService _teamService;
+        
         public TeamController(ARealmContext context)
         {
             _context = context;
+            _teamService = new TeamService(_context);
         }
 
         [HttpGet] // /api/team
         public List<Team> GetAll()
         {
-            return _context.Teams.ToList();
+            //return _context.Teams.ToList();
+            return _context.Teams.Include(d => d.Session).ToList();
         }
 
         [Route("{id}")] // /api/team/1
         [HttpGet]
         public ActionResult GetById(long id)
         {
-            var item = _context.Teams.Find(id);
+            var item = _context.Teams.Include( d=> d.Session)
+                                        .SingleOrDefault(d=> d.Id == id);
+            //var item = _context.Teams.Find(id);
             if (item == null)
             {
                 return NotFound();
@@ -33,8 +40,10 @@ namespace Controllers
             return Ok(item);
         }
 
+        // om een sessie bij een team aan te sluiten:
+        // PUT reqest doen met de juiste sessiecode als team.sessioncode property.
         [HttpPut("{id}")] // /api/team/1 + body
-        public IActionResult Update(long id, Team item)
+        public IActionResult Update(long id, [FromBody] Team item)
         {
             var team = _context.Teams.Find(id);
             if (team == null)
@@ -43,12 +52,10 @@ namespace Controllers
             }
 
             team.Name =item.Name;
-            //todo
-
-            _context.Teams.Update(team);
-            _context.SaveChanges();
-            return NoContent();
-
+            team.SessionCode = item.SessionCode;
+            
+            return _teamService.CheckSessionCode(team,this);
+                        
         }
 
         [HttpPost] // /api/team + body
