@@ -5,10 +5,10 @@ namespace Models
 {
     public class Team
     {
-        public long TeamId{get;set;}
-        
-        public long SessionId{get;set;}
+        public long Id{get;set;}
+        public string Name{get; set;}
         public Session Session {get;set;}
+        public string SessionCode {get; set;}
 
         [NotMapped]        
         public Color TeamColor{get;set;}

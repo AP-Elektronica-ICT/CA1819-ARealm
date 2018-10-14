@@ -11,40 +11,45 @@ namespace Models
         public static void Initialize(ARealmContext context)
         {
             //create db if not yet exists
-            context.Database.EnsureCreated();
-
-            if(!context.TodoItems.Any()) //check if database is empty
-            {
-                var item1 = new TodoItem() // add item
-                {
-                    Name = "item1"
-                };
-                
-                var item2 = new TodoItem2()// add item
-                {
-                    Name = "item2"
-                };
-
-
-                context.TodoItems.Add(item1);
-                context.TodoItems2.Add(item2);
-                //save all the changes to the DB
-                context.SaveChanges();         
-            }
+            context.Database.EnsureCreated();      
 
             if(!context.Sessions.Any())
             {
-                var TestSession = new Session
+
+                var Team1 = new Team()
                 {
-                    SessionCode = "TestCode",
-                    Teams = new List<Team>{},
+                    Name =  "team1",
+                    Session = null
+                    
+                };
+                 var Team2 = new Team()
+                {
+                    Name =  "team2",
+                    Session = null
+                    
+                };
+                var Team3 = new Team()
+                {
+                    Name =  "team3",
+                    Session = null
+                    
+                };
+
+                var TestSession = new Session()
+                {
+                    SessionCode = "1234",
                     Districts =  new List<District>{},
                 };
                 TestSession.CurrentStateString= "Active";
 
                 context.Sessions.Add(TestSession);
+                context.Teams.Add(Team1);
+                context.Teams.Add(Team2);
+                context.Teams.Add(Team3);
                 context.SaveChanges();
             }
+
+            
         }
     }
 }

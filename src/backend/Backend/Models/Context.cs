@@ -11,16 +11,13 @@ namespace Models
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<District>()
+         /*   modelBuilder.Entity<District>()
                 .HasOne(district => district.Task)
                 .WithOne(task => task.District)
-                .HasForeignKey<Task>(task => task.DistrictId);
+                .HasForeignKey<Task>(task => task.District.Id); */
         }
 
         //add database tables
-        public DbSet<TodoItem> TodoItems { get; set; }
-        public DbSet<TodoItem2> TodoItems2 { get; set; }
-
         public DbSet<Session> Sessions{get;set;}
         public DbSet<District> Districts {get;set;}
         public DbSet<PhotoTask> PhotoTasks {get;set;}
