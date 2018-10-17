@@ -24,7 +24,7 @@ namespace Repositories
         public DbSet<PhotoTask> PhotoTasks {get;set;}
         public DbSet<PuzzleTask> PuzzleTasks {get;set;}
         public DbSet<LocationTask> LocationTasks {get;set;}
-        public DbSet<Team> Teams {get;set;}
+        public DbSet<Team> Teams { get; set; }
 
 
     }

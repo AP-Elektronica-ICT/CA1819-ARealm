@@ -46,6 +46,7 @@ namespace WebAPI
             services.AddScoped<PhotoTaskService>();
             services.AddScoped<LocationTaskService>();
             services.AddScoped<PuzzleTaskService>();
+            services.AddScoped<SessionCodeService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
