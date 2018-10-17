@@ -13,19 +13,24 @@ namespace Repositories
 
             if(!context.Sessions.Any())
             {
+                var TestSession = new Session()
+                {
+                    SessionCode = "1234",
+                    Districts = new List<District> { },
+                };
 
                 var Team1 = new Team()
                 {
                     Name =  "team1",
-                    Session = null
+                    Session = TestSession
                     
                 };
                  var Team2 = new Team()
                 {
                     Name =  "team2",
-                    Session = null
-                    
-                };
+                    Session = TestSession
+
+                 };
                 var Team3 = new Team()
                 {
                     Name =  "team3",
@@ -33,11 +38,7 @@ namespace Repositories
                     
                 };
 
-                var TestSession = new Session()
-                {
-                    SessionCode = "1234",
-                    Districts =  new List<District>{},
-                };
+
                 TestSession.CurrentStateString= "Active";
 
                 context.Sessions.Add(TestSession);

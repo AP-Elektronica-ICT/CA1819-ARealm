@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Linq;
+using Microsoft.EntityFrameworkCore;
 
 namespace Repositories
 {
@@ -20,7 +21,7 @@ namespace Repositories
         {
             try
             {
-                return _context.Teams.ToList();
+                return _context.Teams.Include(d => d.Session).ToList();
             }
             catch (Exception ex)
             {
@@ -32,7 +33,9 @@ namespace Repositories
         {
             try
             {
-                return _context.Teams.Find(id);
+                return _context.Teams
+                            .Include(d => d.Session)
+                                   .SingleOrDefault(d => d.Id == id);
             }
             catch (Exception ex)
             {
