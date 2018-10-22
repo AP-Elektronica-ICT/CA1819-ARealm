@@ -5,12 +5,22 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
+
+//Pages: to add a new page, add in declarations and entryComponents!
+import { RegistrationPage } from '../pages/registration/registration';
+import { MapPage } from '../pages/map/map';
+import { PictureTaskPage } from '../pages/picture-task/picture-task';
+import { PuzzleTaskPage } from '../pages/puzzle-task/puzzle-task';
+import { SetupPage } from '../pages/setup/setup';
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    RegistrationPage,
+    MapPage,
+    PictureTaskPage,
+    PuzzleTaskPage,
+    SetupPage
   ],
   imports: [
     BrowserModule,
@@ -19,7 +29,11 @@ import { HomePage } from '../pages/home/home';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    RegistrationPage,
+    MapPage,
+    PictureTaskPage,
+    PuzzleTaskPage,
+    SetupPage
   ],
   providers: [
     StatusBar,
