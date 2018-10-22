@@ -1,0 +1,7 @@
+{
+  "name": "ARealmApp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

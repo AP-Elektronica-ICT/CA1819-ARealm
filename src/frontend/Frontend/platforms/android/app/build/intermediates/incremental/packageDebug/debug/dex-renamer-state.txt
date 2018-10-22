@@ -1,4 +1,0 @@
-#Mon Oct 22 00:29:38 CEST 2018
-base.0=F\:\\ArtesisPlantijn\\Cloud Applications\\CA1819-ARealm\\src\\frontend\\Frontend\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
-path.0=classes.dex
-renamed.0=classes.dex
