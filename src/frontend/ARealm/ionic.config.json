@@ -1,0 +1,7 @@
+{
+  "name": "ARealm",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
