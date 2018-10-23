@@ -1,5 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { SetupPage } from '../setup/setup';
+import { PuzzleTaskPage } from '../puzzle-task/puzzle-task';
+import { RegistrationPage } from '../registration/registration';
+import { App, MenuController } from 'ionic-angular';
 
 /**
  * Generated class for the MapPage page.
@@ -15,11 +19,24 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class MapPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  activeMenu: string;
+
+  constructor(public navCtrl: NavController, public navParams: NavParams, menu: MenuController) {
+    menu.enable(true);
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad MapPage');
+  }
+  gotoSetup(){
+    this.navCtrl.push(SetupPage);
+  }
+
+  gotoRegistration(){
+    this.navCtrl.push(RegistrationPage);
+  }
+  gotoPuzzleTask(){
+    this.navCtrl.push(PuzzleTaskPage);
   }
 
 }

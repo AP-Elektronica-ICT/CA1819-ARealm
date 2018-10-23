@@ -26,15 +26,6 @@ export class RegistrationPage {
     console.log('ionViewDidLoad RegistrationPage');
   }
 
-  gotoSetup(){
-    this.navCtrl.push(SetupPage);
-  }
-
-  gotoMap(){
-    this.navCtrl.push(MapPage);
-  }
-  gotoPuzzleTask(){
-    this.navCtrl.push(PuzzleTaskPage);
-  }
+  
 
 }
