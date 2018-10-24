@@ -34,3 +34,5 @@ C:\Users\joris\school\2019\Cloud applications\CA1819-ARealm\src\backend\WebAPI\S
 C:\Users\joris\school\2019\Cloud applications\CA1819-ARealm\src\backend\WebAPI\Services\obj\Debug\netcoreapp2.1\Services.pdb
 C:\Users\joris\school\2019\Cloud applications\CA1819-ARealm\src\backend\WebAPI\Services\bin\Debug\netcoreapp2.1\Services.runtimeconfig.json
 C:\Users\joris\school\2019\Cloud applications\CA1819-ARealm\src\backend\WebAPI\Services\bin\Debug\netcoreapp2.1\Services.runtimeconfig.dev.json
+C:\Users\Gener\Desktop\Mappen\School\3de jaar (2018-2019)\Cloud Applications\CA1819-ARealm\src\backend\WebAPI\Services\obj\Debug\netcoreapp2.1\Services.dll
+C:\Users\Gener\Desktop\Mappen\School\3de jaar (2018-2019)\Cloud Applications\CA1819-ARealm\src\backend\WebAPI\Services\obj\Debug\netcoreapp2.1\Services.pdb

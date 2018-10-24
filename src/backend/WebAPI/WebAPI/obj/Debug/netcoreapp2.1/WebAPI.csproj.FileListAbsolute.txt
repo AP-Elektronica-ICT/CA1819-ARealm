@@ -40,3 +40,5 @@ C:\Users\joris\school\2019\Cloud applications\CA1819-ARealm\src\backend\WebAPI\W
 C:\Users\joris\school\2019\Cloud applications\CA1819-ARealm\src\backend\WebAPI\WebAPI\obj\Debug\netcoreapp2.1\WebAPI.csproj.CopyComplete
 C:\Users\joris\school\2019\Cloud applications\CA1819-ARealm\src\backend\WebAPI\WebAPI\obj\Debug\netcoreapp2.1\WebAPI.dll
 C:\Users\joris\school\2019\Cloud applications\CA1819-ARealm\src\backend\WebAPI\WebAPI\obj\Debug\netcoreapp2.1\WebAPI.pdb
+C:\Users\Gener\Desktop\Mappen\School\3de jaar (2018-2019)\Cloud Applications\CA1819-ARealm\src\backend\WebAPI\WebAPI\obj\Debug\netcoreapp2.1\WebAPI.dll
+C:\Users\Gener\Desktop\Mappen\School\3de jaar (2018-2019)\Cloud Applications\CA1819-ARealm\src\backend\WebAPI\WebAPI\obj\Debug\netcoreapp2.1\WebAPI.pdb

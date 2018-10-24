@@ -10,7 +10,7 @@ namespace WebAPI
 {
     //API endpoints
     [Route("api/district")]
-    public class DistrictController : ControllerBase
+    public class DistrictController : Controller
     {
         private DistrictService _service;
 

@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Models;
+﻿using Models;
 using Repositories;
+using System.Collections.Generic;
+using ViewModels;
 
 namespace Services
 {
@@ -40,6 +39,31 @@ namespace Services
         public PuzzleTask Get(long id)
         {
             return _repository.Get(id);
+        }
+
+
+        //Kijkt of opgegeven antwoord hetzelfde is als 1 van de correcte antwoorden in de database
+        public TaskValidationViewModel CheckIfTrue(PuzzleTask puzzleTask)
+        {
+            var pt = _repository.Get(puzzleTask.Id);
+
+            foreach (string answer in pt.Answers)
+            {
+                if (puzzleTask.Answers[0] == answer)
+                {
+                    return new TaskValidationViewModel
+                    {
+                        IsCorrect = true
+                    };
+
+                }
+            }
+
+            return new TaskValidationViewModel
+            {
+                IsCorrect = false
+            };
+
         }
     }
 }

@@ -30,3 +30,5 @@ C:\Users\joris\school\2019\Cloud applications\CA1819-ARealm\src\backend\WebAPI\R
 C:\Users\joris\school\2019\Cloud applications\CA1819-ARealm\src\backend\WebAPI\Repositories\obj\Debug\netcoreapp2.1\Repositories.csproj.CopyComplete
 C:\Users\joris\school\2019\Cloud applications\CA1819-ARealm\src\backend\WebAPI\Repositories\bin\Debug\netcoreapp2.1\Repositories.runtimeconfig.json
 C:\Users\joris\school\2019\Cloud applications\CA1819-ARealm\src\backend\WebAPI\Repositories\bin\Debug\netcoreapp2.1\Repositories.runtimeconfig.dev.json
+C:\Users\Gener\Desktop\Mappen\School\3de jaar (2018-2019)\Cloud Applications\CA1819-ARealm\src\backend\WebAPI\Repositories\obj\Debug\netcoreapp2.1\Repositories.dll
+C:\Users\Gener\Desktop\Mappen\School\3de jaar (2018-2019)\Cloud Applications\CA1819-ARealm\src\backend\WebAPI\Repositories\obj\Debug\netcoreapp2.1\Repositories.pdb

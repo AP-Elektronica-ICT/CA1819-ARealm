@@ -9,14 +9,20 @@ export class TaskService {
 
     /**
      * SendAnswerForValidation: PUT voor het antwoord te versturen naar de server
+     * TODO: Frontend styling & testing
      */
-    public SendAnswerForValidation(answer: string) {
-        return this.http.put<>
+    public SendAnswerForValidation(task:ITask) {
+        return this.http.put<ITaskValidation>(
+            'http://localhost:5000/api/taskvalidation',
+            task
+            )
     }
 
 
 }
 
+
+//If you change these interfaces don't forget to change them in the backend as well!
 export interface ITask
 {
     Id: number;
@@ -24,12 +30,15 @@ export interface ITask
     Description: string;
     District: IDistrict;
     DistrictID: number;
+    Answer: string;
 }
 export interface IDistrict
 {
-
     Id: number;
     Task: ITask;
     CurrentStateString: string;
-
+}
+export interface ITaskValidation
+{
+    IsCorrect: boolean;
 }
