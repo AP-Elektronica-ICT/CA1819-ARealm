@@ -8,8 +8,6 @@ namespace Models
         public Task Task{get;set;}
         public Session Session{get;set;}
 
-        //public long StateId {get;set;}
-
         //CurrentStateString voor het opslagen van de current state v/h district:
         public string CurrentStateString {get;set;}
         [NotMapped]
