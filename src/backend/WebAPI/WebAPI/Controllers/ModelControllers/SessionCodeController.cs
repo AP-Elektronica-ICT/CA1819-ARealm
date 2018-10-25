@@ -10,7 +10,7 @@ namespace WebAPI.Controllers
 {
     //API endpoints
     [Route("api/code")]
-    public class SessionCodeController : ControllerBase
+    public class SessionCodeController : Controller
     {
         private SessionCodeService _service;
 

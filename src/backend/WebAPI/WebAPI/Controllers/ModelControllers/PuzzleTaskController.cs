@@ -10,7 +10,7 @@ namespace WebAPI
 {
     //API endpoints
     [Route("api/location")]
-    public class PuzzleTaskController : ControllerBase
+    public class PuzzleTaskController : Controller
     {
         private PuzzleTaskService _service;
 

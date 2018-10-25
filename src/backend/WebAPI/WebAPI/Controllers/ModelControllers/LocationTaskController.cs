@@ -10,7 +10,7 @@ namespace WebAPI
 {
     //API endpoints
     [Route("api/location")]
-    public class LocationTaskController : ControllerBase
+    public class LocationTaskController : Controller
     {
         private LocationTaskService _service;
 

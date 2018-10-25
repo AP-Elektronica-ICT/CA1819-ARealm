@@ -10,7 +10,7 @@ namespace WebAPI
 {
     //API endpoints
     [Route("api/team")]
-    public class TeamController : ControllerBase
+    public class TeamController : Controller
     {
         private TeamService _service;
 

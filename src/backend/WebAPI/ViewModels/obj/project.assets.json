@@ -176,23 +176,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Gener\\.nuget\\packages\\": {},
+    "C:\\Users\\joris\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Gener\\Desktop\\Mappen\\School\\3de jaar (2018-2019)\\Cloud Applications\\CA1819-ARealm\\src\\backend\\WebAPI\\ViewModels\\ViewModels.csproj",
+      "projectUniqueName": "C:\\Users\\joris\\school\\2019\\Cloud applications\\CA1819-ARealm\\src\\backend\\WebAPI\\ViewModels\\ViewModels.csproj",
       "projectName": "ViewModels",
-      "projectPath": "C:\\Users\\Gener\\Desktop\\Mappen\\School\\3de jaar (2018-2019)\\Cloud Applications\\CA1819-ARealm\\src\\backend\\WebAPI\\ViewModels\\ViewModels.csproj",
-      "packagesPath": "C:\\Users\\Gener\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Gener\\Desktop\\Mappen\\School\\3de jaar (2018-2019)\\Cloud Applications\\CA1819-ARealm\\src\\backend\\WebAPI\\ViewModels\\obj\\",
+      "projectPath": "C:\\Users\\joris\\school\\2019\\Cloud applications\\CA1819-ARealm\\src\\backend\\WebAPI\\ViewModels\\ViewModels.csproj",
+      "packagesPath": "C:\\Users\\joris\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\joris\\school\\2019\\Cloud applications\\CA1819-ARealm\\src\\backend\\WebAPI\\ViewModels\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Gener\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\joris\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

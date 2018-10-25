@@ -10,7 +10,7 @@ namespace WebAPI
 {
     //API endpoints
     [Route("api/location")]
-    public class PhotoTaskController : ControllerBase
+    public class PhotoTaskController : Controller
     {
         private PhotoTaskService _service;
 

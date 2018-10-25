@@ -10,7 +10,7 @@ namespace WebAPI
 {
     //API endpoints
     [Route("api/session")]
-    public class SessionController : ControllerBase
+    public class SessionController : Controller
     {
         private SessionService _service;
 
