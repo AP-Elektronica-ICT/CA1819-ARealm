@@ -6,12 +6,15 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 
-//Pages: to add a new page, add in declarations and entryComponents!
+//Pages: to add a new page, add in 'declarations' and 'entryComponents'!
 import { RegistrationPage } from '../pages/registration/registration';
 import { MapPage } from '../pages/map/map';
 import { PictureTaskPage } from '../pages/picture-task/picture-task';
 import { PuzzleTaskPage } from '../pages/puzzle-task/puzzle-task';
 import { SetupPage } from '../pages/setup/setup';
+
+//External Services: add them in 'providers'!
+import { GoogleMaps, GoogleMap } from '@ionic-native/google-maps';
 
 @NgModule({
   declarations: [
@@ -38,6 +41,7 @@ import { SetupPage } from '../pages/setup/setup';
   providers: [
     StatusBar,
     SplashScreen,
+    GoogleMaps,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
