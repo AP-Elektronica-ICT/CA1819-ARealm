@@ -34,7 +34,13 @@ export class RegistrationPage {
     this.navCtrl.push(MapPage);
   }
   gotoPuzzleTask(){
-    this.navCtrl.push(PuzzleTaskPage);
+
+  
+
+    this.navCtrl.push(PuzzleTaskPage,
+      {
+        id : 1
+      });
   }
 
 }

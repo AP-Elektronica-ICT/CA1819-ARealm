@@ -5,7 +5,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
-
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 //Services: to add a new Service for communication with API, add in declaration and providers!
 import { TaskService } from './service/task.service';
@@ -18,6 +18,7 @@ import { PuzzleTaskPage } from '../pages/puzzle-task/puzzle-task';
 import { SetupPage } from '../pages/setup/setup';
 
 
+
 @NgModule({
   declarations: [
     MyApp,
@@ -25,11 +26,12 @@ import { SetupPage } from '../pages/setup/setup';
     MapPage,
     PictureTaskPage,
     PuzzleTaskPage,
-    SetupPage
+    SetupPage,
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    HttpClientModule,
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -44,6 +46,7 @@ import { SetupPage } from '../pages/setup/setup';
     StatusBar,
     SplashScreen,
     TaskService,
+    HttpClient,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

@@ -28,11 +28,24 @@ namespace Repositories
             }
 
         }
-        public PuzzleTask Get(long id)
+        public PuzzleTask GetById(long id)
         {
             try
             {
                 return _context.PuzzleTasks.Find(id);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+        }
+
+        public PuzzleTask GetByTitle(string title)
+        {
+            try
+            {
+                return _context.PuzzleTasks.FirstOrDefault(d => d.Title==title);
             }
             catch (Exception ex)
             {

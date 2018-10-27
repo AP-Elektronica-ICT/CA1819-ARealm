@@ -4,29 +4,38 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-<ion-header>
+<ion-grid class="container" *ngIf="PuzzleTask">
+<ion-row>
+    <ion-header>
+        <ion-navbar>
+          <ion-title>{{PuzzleTask.title}}</ion-title>
+        </ion-navbar>
+    </ion-header>
+</ion-row>
 
-  <ion-navbar>
-    <ion-title>puzzle-task</ion-title>
-  </ion-navbar>
+<ion-row>
+    <ion-card>
+        <ion-card-header>
+          {{PuzzleTask.district}}
+        </ion-card-header>
+      
+        <div ion-item>
+            <ion-icon name="flask" item-start></ion-icon>
+            {{PuzzleTask.title}}
+        </div>
 
-</ion-header>
+          <div ion-item>
+            <ion-icon name="help" item-start></ion-icon>
+            {{PuzzleTask.question}}
+          </div>
 
+          <ion-item>
+            <ion-input type="text" [(ngModel)]="Answer" placeholder="Voer uw antwoord hier in"></ion-input>
+          </ion-item>
 
-<ion-card>
-
-  <img src="assets/imgs/examplemap.jpg">
-  <ion-fab right top>
-    <button ion-fab>
-      <ion-icon name="pin"></ion-icon>
-    </button>
-  </ion-fab>
-
-  <ion-item>
-    <ion-icon name="book" item-start large ></ion-icon>
-    <h2>{{PuzzleTask.Title}}</h2>
-    <p>{{PuzzleTask.Description}}</p>
-  </ion-item>
-
-</ion-card>
-
+          <ion-row justify-content-center>
+              <button ion-button block color="secondary" (click)="Send()">Send</button>  
+          </ion-row>    
+      </ion-card>
+</ion-row>
+</ion-grid>

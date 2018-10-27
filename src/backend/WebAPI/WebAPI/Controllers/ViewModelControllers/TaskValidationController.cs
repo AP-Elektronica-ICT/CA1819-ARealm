@@ -18,6 +18,12 @@ namespace WebAPI
         private PuzzleTaskService _puzzleTaskService;
         private PhotoTaskService _photoTaskService;
         private LocationTaskService _locationTaskService;
+        public TaskValidationController(PuzzleTaskService puzzleTaskService, PhotoTaskService photoTaskService,LocationTaskService locationTaskService)
+        {
+            _puzzleTaskService = puzzleTaskService;
+            _photoTaskService = photoTaskService;
+            _locationTaskService = locationTaskService;
+        }
 
         [HttpPut()]
         public TaskValidationViewModel PutForValidation([FromBody] PuzzleTask puzzleTask)

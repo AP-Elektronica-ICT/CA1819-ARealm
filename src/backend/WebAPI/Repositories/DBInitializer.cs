@@ -34,9 +34,25 @@ namespace Repositories
                 var Team3 = new Team()
                 {
                     Name =  "team3",
-                    Session = null
+                    Session = TestSession
                     
                 };
+                var TestDistrict = new District()
+                {
+                    Session = TestSession,
+                };
+
+                var TestPuzzleTask = new PuzzleTask()
+                {
+                    Question = "Wie is de beste codeur in het ARealm team?",
+                    Answer = "Joris niet",
+                    Title = "TestPuzzleTask",
+                    Description = "PuzzleTask voor te testen :)",
+                    District = TestDistrict,
+                };
+                TestDistrict.Task = TestPuzzleTask;
+                TestDistrict.CurrentState = new Unlocked(TestDistrict);
+
 
 
                 TestSession.CurrentStateString= "Active";
@@ -45,6 +61,9 @@ namespace Repositories
                 context.Teams.Add(Team1);
                 context.Teams.Add(Team2);
                 context.Teams.Add(Team3);
+
+                context.PuzzleTasks.Add(TestPuzzleTask);
+                context.Districts.Add(TestDistrict);
                 //save changes to DB
                 context.SaveChanges();
             }

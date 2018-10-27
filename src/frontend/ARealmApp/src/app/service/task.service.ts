@@ -6,16 +6,26 @@ import { Observable } from 'rxjs/Observable';
 export class TaskService {
 
   constructor(private http: HttpClient) { }
+  url='http://localhost:5000/api'
 
     /**
      * SendAnswerForValidation: PUT voor het antwoord te versturen naar de server
      * TODO: Frontend styling & testing
      */
-    public SendAnswerForValidation(task:ITask) {
+    public SendAnswerForValidation(task:IPuzzleTask) {
         return this.http.put<ITaskValidation>(
-            'http://localhost:5000/api/taskvalidation',
+            this.url+"/taskvalidation",
             task
             )
+    }
+    /**
+     * GetPuzzleTask voor het verkrijgen van de puzzletask voor in te laden in de view.
+     */
+    public GetPuzzleTask(id:number) {
+        return this.http.get<IPuzzleTask>(
+            this.url+'/puzzle/'+id
+        )
+        
     }
 
 
@@ -25,20 +35,29 @@ export class TaskService {
 //If you change these interfaces don't forget to change them in the backend as well!
 export interface ITask
 {
-    Id: number;
-    Title: string;
-    Description: string;
-    District: IDistrict;
-    DistrictID: number;
-    Answer: string;
+    id: number;
+    title: string;
+    description: string;
+    district: IDistrict;
+    districtID: number;
+}
+export interface IPuzzleTask 
+{
+    id: number;
+    title: string;
+    description: string;
+    district: IDistrict;
+    districtID: number;
+    question: string;
+    answer: string;
 }
 export interface IDistrict
 {
-    Id: number;
-    Task: ITask;
-    CurrentStateString: string;
+    id: number;
+    task: ITask;
+    currentStateString: string;
 }
 export interface ITaskValidation
 {
-    IsCorrect: boolean;
+    isCorrect: boolean;
 }

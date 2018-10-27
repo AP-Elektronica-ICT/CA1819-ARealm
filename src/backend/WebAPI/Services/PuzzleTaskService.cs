@@ -38,18 +38,16 @@ namespace Services
 
         public PuzzleTask Get(long id)
         {
-            return _repository.Get(id);
+            return _repository.GetById(id);
         }
 
 
         //Kijkt of opgegeven antwoord hetzelfde is als 1 van de correcte antwoorden in de database
         public TaskValidationViewModel CheckIfTrue(PuzzleTask puzzleTask)
         {
-            var pt = _repository.Get(puzzleTask.Id);
+            var pt = _repository.GetById(puzzleTask.Id);
 
-            foreach (string answer in pt.Answers)
-            {
-                if (puzzleTask.Answers[0] == answer)
+                if (puzzleTask.Answer == pt.Answer)
                 {
                     return new TaskValidationViewModel
                     {
@@ -57,7 +55,6 @@ namespace Services
                     };
 
                 }
-            }
 
             return new TaskValidationViewModel
             {
