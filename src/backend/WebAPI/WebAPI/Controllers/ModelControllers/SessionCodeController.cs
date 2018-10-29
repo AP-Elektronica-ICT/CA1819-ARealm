@@ -22,7 +22,7 @@ namespace WebAPI.Controllers
         [HttpGet] // GET api/code
         public SessionCode Get()
         {
-            return _service.Create();
+            return _service.Create(); // creates new session with code
         }
 
 

@@ -9,7 +9,7 @@ using Services;
 namespace WebAPI
 {
     //API endpoints
-    [Route("api/location")]
+    [Route("api/puzzle")]
     public class PuzzleTaskController : Controller
     {
         private PuzzleTaskService _service;

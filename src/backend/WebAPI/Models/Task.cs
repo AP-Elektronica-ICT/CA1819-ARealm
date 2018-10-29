@@ -1,3 +1,5 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Models
@@ -9,8 +11,10 @@ namespace Models
         public string Description{get;set;}
         [NotMapped]
         public string[] Answers { get; set; }
-        public District District{get;set;}
-        public long DistrictId { get; set; } //FK
+        
+        [JsonIgnore]
+        public ICollection<District> Districts{get;set;}
+        
 
     }
     

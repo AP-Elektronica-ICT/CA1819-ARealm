@@ -4,6 +4,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { MapPage } from '../map/map';
 import { SetupPage } from '../setup/setup';
 import { PuzzleTaskPage } from '../puzzle-task/puzzle-task';
+import { PhotoTaskPage } from '../photo-task/photo-task';
 
 /**
  * Generated class for the RegistrationPage page.
@@ -35,6 +36,9 @@ export class RegistrationPage {
   }
   gotoPuzzleTask(){
     this.navCtrl.push(PuzzleTaskPage);
+  }
+  gotoPhotoTask(){
+    this.navCtrl.push(PhotoTaskPage);
   }
 
 }

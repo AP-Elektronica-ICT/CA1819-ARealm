@@ -11,26 +11,27 @@ namespace Services
     {
         private TeamRepository _repository;
         private SessionService _sessionService;
-        public int maxTeamsPerSession; // change name?
-        public int teamCount;
+        public int maxTeams; // change name?
 
         public TeamService(TeamRepository repository, SessionService service)
         {
             _repository = repository;
             _sessionService = service;
-            maxTeamsPerSession = 4;
+            maxTeams = 4;
         }
 
-        public Team Create(Team team)
+        public bool Create(Team team, long id)
         {
-            AddTeamToSession(team);
-            return _repository.Post(team);
+            var added = AddTeamToSession(team, id);
+            if (added)
+            {
+                _repository.Post(team);
+            }         
+            return added;
         }
 
         public Team Update(Team team)
         {
-            //TODO new item gets created?ode 
-            AddTeamToSession(team);
             return _repository.Put(team);
         }
 
@@ -50,31 +51,20 @@ namespace Services
             return _repository.Get(id);
         }
 
-        public bool AddTeamToSession(Team team)
+        public bool AddTeamToSession(Team team, long id)
         {
-            teamCount = 0;
-            List<Session> sessions = _sessionService.GetAll();
-            List<Team> teams = GetAll();
-
-            foreach (Session session in sessions)
+            var session = _sessionService.Get(id);
+            var count = session.Teams.Count;
+            if(count < maxTeams)
             {
-                if (session.SessionCode == team.SessionCode)
+                if (team.SessionCode == session.SessionCode.Code) // compare session codes
                 {
-                    foreach (Team t in teams)
-                    {
-                        if (t.SessionCode == session.SessionCode) // count teams with same session code
-                        {                                         // todo session.Teams.Count => Teams gives null  
-                            teamCount++;
-                        }
-                    }
-                    if (teamCount < maxTeamsPerSession)// check if session is full
-                    {
-                        team.Session = session; // add session to team
-                        return true;
-                    }
+                    team.Session = session; // add team to session
+                    return true;
                 }
             }
             return false;
+
         }
     }
 }

@@ -21,7 +21,7 @@ namespace Repositories
         {
             try
             {
-                return _context.Teams.Include(d => d.Session).ToList();
+                return _context.Teams.ToList();
             }
             catch (Exception ex)
             {
@@ -33,9 +33,7 @@ namespace Repositories
         {
             try
             {
-                return _context.Teams
-                            .Include(d => d.Session)
-                                   .SingleOrDefault(d => d.Id == id);
+                return _context.Teams.Find(id);
             }
             catch (Exception ex)
             {

@@ -12,41 +12,40 @@ namespace WebAPI
     [Route("api/session")]
     public class SessionController : Controller
     {
-        private SessionService _service;
+        private SessionService _sessionService;
+        private TeamService _teamService;
+        private DistrictService _districtService;
 
-        public SessionController(SessionService service)
+        public SessionController(SessionService sessionService, TeamService teamService, DistrictService districtService)
         {
-            _service = service;
+            _sessionService = sessionService;
+            _teamService = teamService;
+            _districtService = districtService;
         }
 
         [HttpGet] // GET api/session
         public IEnumerable<Session> Get()
         {
-            return _service.GetAll();
+            return _sessionService.GetAll();
         }
 
         [HttpGet("{id}")] // GET api/session/5
         public Session Get(long id)
         {
-            return _service.Get(id);
+            return _sessionService.Get(id);
         }
 
-        [HttpPut("{id}")]
-        public Session Put([FromBody]Session session)
-        {
-            return _service.Update(session);
-        }
-
+        [Route("{id}/teams")] // POST api/session/3/teams team aanmaken in bepaalde sessie
         [HttpPost]
-        public Session Post([FromBody]Session session)
+        public bool AddTeamToSession([FromBody]Team team,long id)
         {
-            return _service.Create(session);
+            return _teamService.Create(team, id);
         }
 
         [HttpDelete("{id}")]
         public bool Delete(long id)
         {
-            return _service.Delete(id);
+            return _sessionService.Delete(id);
         }
 
 

@@ -37,11 +37,6 @@ namespace WebAPI
             return _service.Update(team);
         }
 
-        [HttpPost]
-        public Team Post([FromBody]Team team)
-        {
-            return _service.Create(team);
-        }
 
         [HttpDelete("{id}")]
         public bool Delete(long id)

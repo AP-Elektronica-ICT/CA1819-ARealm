@@ -9,7 +9,7 @@ using Services;
 namespace WebAPI
 {
     //API endpoints
-    [Route("api/location")]
+    [Route("api/photo")]
     public class PhotoTaskController : Controller
     {
         private PhotoTaskService _service;

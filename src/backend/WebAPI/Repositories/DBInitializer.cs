@@ -13,38 +13,81 @@ namespace Repositories
 
             if(!context.Sessions.Any())
             {
-                var TestSession = new Session()
+
+                var task1 = new PhotoTask()
                 {
-                    SessionCode = "1234",
-                    Districts = new List<District> { },
+                    Title = "phototask 1",
+                    Description = "this is a phototask"
                 };
+                context.PhotoTasks.Add(task1);
 
-                var Team1 = new Team()
+                var task2 = new PhotoTask()
                 {
-                    Name =  "team1",
-                    Session = TestSession
-                    
+                    Title = "phototask 2",
+                    Description = "this is a phototask"
                 };
-                 var Team2 = new Team()
-                {
-                    Name =  "team2",
-                    Session = TestSession
+                context.PhotoTasks.Add(task2);
 
-                 };
-                var Team3 = new Team()
+                var task3 = new PhotoTask()
                 {
-                    Name =  "team3",
-                    Session = null
-                    
+                    Title = "puzzletask 1",
+                    Description = "this is a phto"
                 };
+                context.PhotoTasks.Add(task3);
+
+                var task4 = new PhotoTask()
+                {
+                    Title = "puzzletask 2",
+                    Description = "this is a photo"
+                };
+                context.PhotoTasks.Add(task4);
 
 
-                TestSession.CurrentStateString= "Active";
+                var district1 = new District()
+                {
+                    Title = "this is locked district 1",
+                    Task = task1
 
-                context.Sessions.Add(TestSession);
-                context.Teams.Add(Team1);
-                context.Teams.Add(Team2);
-                context.Teams.Add(Team3);
+                };
+                district1.CurrentState = new Locked(district1);
+                context.Districts.Add(district1);
+
+                var district2 = new District()
+                {
+                    Title = "this is locked district 2",
+                    Task = task2
+
+                };
+                district2.CurrentState = new Locked(district2);
+                context.Districts.Add(district2);
+
+                var district3 = new District()
+                {
+                    Title = "this is locked district 3",
+                    Task = task3
+
+                };
+                district3.CurrentState = new Locked(district3);
+                context.Districts.Add(district3);
+
+                var district4 = new District()
+                {
+                    Title = "this is locked district 4",
+                    Task = task4
+
+                };
+                district4.CurrentState = new Locked(district4);
+                context.Districts.Add(district4);
+
+                var districtList = new LockedDistricts()
+                {
+                    Districts = new List<District>()
+                };
+                districtList.Districts.Add(district1);
+                districtList.Districts.Add(district2);
+                districtList.Districts.Add(district3);
+                districtList.Districts.Add(district4);
+                context.LockedDistricts.Add(districtList);
                 //save changes to DB
                 context.SaveChanges();
             }

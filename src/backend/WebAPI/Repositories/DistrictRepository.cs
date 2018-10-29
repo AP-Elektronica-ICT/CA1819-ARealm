@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Microsoft.EntityFrameworkCore;
 using Models;
 
 namespace Repositories
@@ -20,7 +21,7 @@ namespace Repositories
         {
             try
             {
-                return _context.Districts.ToList();
+                return _context.Districts.Include(d => d.Task).ToList();
             }
             catch (Exception ex)
             {
@@ -32,7 +33,7 @@ namespace Repositories
         {
             try
             {
-                return _context.Districts.Find(id);
+                return _context.Districts.Include(d => d.Task).SingleOrDefault(d => d.Id ==id);
             }
             catch (Exception ex)
             {

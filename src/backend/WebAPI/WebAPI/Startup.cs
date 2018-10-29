@@ -39,6 +39,8 @@ namespace WebAPI
             services.AddScoped<PhotoTaskRepository>();
             services.AddScoped<LocationTaskRepository>();
             services.AddScoped<PuzzleTaskRepository>();
+            services.AddScoped<LockedDistrictsRepository>();
+            services.AddScoped<SessionCodeRepository>();
 
             services.AddScoped<SessionService>();
             services.AddScoped<TeamService>();

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Microsoft.EntityFrameworkCore;
 using Models;
 using Repositories;
 
@@ -21,7 +22,9 @@ namespace Repositories
         {
             try
             {
-                return _context.Sessions.ToList();
+                 return _context.Sessions.Include(d => d.Districts)
+                                            .Include(d => d.Teams)
+                                                .Include(d => d.SessionCode).ToList();     
             }
             catch (Exception ex)
             {
@@ -33,7 +36,12 @@ namespace Repositories
         {
             try
             {
-                return _context.Sessions.Find(id);
+
+                 return _context.Sessions.Include(d => d.Districts)
+                                                          .Include(d => d.Teams)
+                                                              .Include(d => d.SessionCode)
+                                                                      .SingleOrDefault(d => d.Id == id); 
+                                                
             }
             catch (Exception ex)
             {
