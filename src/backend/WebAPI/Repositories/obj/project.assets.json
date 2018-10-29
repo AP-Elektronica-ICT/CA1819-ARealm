@@ -5264,13 +5264,24 @@
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
           "Microsoft.AspNetCore.All": "2.1.5",
-          "Newtonsoft.Json": "11.0.2"
+          "Newtonsoft.Json": "11.0.2",
+          "ViewModels": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Models.dll": {}
         },
         "runtime": {
           "bin/placeholder/Models.dll": {}
+        }
+      },
+      "ViewModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/ViewModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ViewModels.dll": {}
         }
       }
     }
@@ -13582,6 +13593,11 @@
       "type": "project",
       "path": "../Models/Models.csproj",
       "msbuildProject": "../Models/Models.csproj"
+    },
+    "ViewModels/1.0.0": {
+      "type": "project",
+      "path": "../ViewModels/ViewModels.csproj",
+      "msbuildProject": "../ViewModels/ViewModels.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -13590,7 +13606,8 @@
       "Microsoft.EntityFrameworkCore >= 2.1.4",
       "Microsoft.NETCore.App >= 2.1.0",
       "Models >= 1.0.0",
-      "Newtonsoft.Json >= 11.0.2"
+      "Newtonsoft.Json >= 11.0.2",
+      "ViewModels >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -13625,6 +13642,9 @@
           "projectReferences": {
             "C:\\Users\\joris\\school\\2019\\Cloud applications\\CA1819-ARealm\\src\\backend\\WebAPI\\Models\\Models.csproj": {
               "projectPath": "C:\\Users\\joris\\school\\2019\\Cloud applications\\CA1819-ARealm\\src\\backend\\WebAPI\\Models\\Models.csproj"
+            },
+            "C:\\Users\\joris\\school\\2019\\Cloud applications\\CA1819-ARealm\\src\\backend\\WebAPI\\ViewModels\\ViewModels.csproj": {
+              "projectPath": "C:\\Users\\joris\\school\\2019\\Cloud applications\\CA1819-ARealm\\src\\backend\\WebAPI\\ViewModels\\ViewModels.csproj"
             }
           }
         }

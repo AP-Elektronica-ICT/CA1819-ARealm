@@ -5423,7 +5423,8 @@
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
           "Microsoft.AspNetCore.All": "2.1.5",
-          "Newtonsoft.Json": "11.0.2"
+          "Newtonsoft.Json": "11.0.2",
+          "ViewModels": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Models.dll": {}
@@ -5439,7 +5440,8 @@
           "Microsoft.AspNetCore.All": "2.1.5",
           "Microsoft.EntityFrameworkCore": "2.1.4",
           "Models": "1.0.0",
-          "Newtonsoft.Json": "11.0.2"
+          "Newtonsoft.Json": "11.0.2",
+          "ViewModels": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Repositories.dll": {}
@@ -5454,13 +5456,24 @@
         "dependencies": {
           "Microsoft.AspNetCore.All": "2.1.5",
           "Newtonsoft.Json": "11.0.2",
-          "Repositories": "1.0.0"
+          "Repositories": "1.0.0",
+          "ViewModels": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Services.dll": {}
         },
         "runtime": {
           "bin/placeholder/Services.dll": {}
+        }
+      },
+      "ViewModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/ViewModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ViewModels.dll": {}
         }
       }
     }
@@ -13795,6 +13808,11 @@
       "type": "project",
       "path": "../Services/Services.csproj",
       "msbuildProject": "../Services/Services.csproj"
+    },
+    "ViewModels/1.0.0": {
+      "type": "project",
+      "path": "../ViewModels/ViewModels.csproj",
+      "msbuildProject": "../ViewModels/ViewModels.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -13805,7 +13823,8 @@
       "Models >= 1.0.0",
       "Newtonsoft.Json >= 11.0.2",
       "Repositories >= 1.0.0",
-      "Services >= 1.0.0"
+      "Services >= 1.0.0",
+      "ViewModels >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -13846,6 +13865,9 @@
             },
             "C:\\Users\\joris\\school\\2019\\Cloud applications\\CA1819-ARealm\\src\\backend\\WebAPI\\Services\\Services.csproj": {
               "projectPath": "C:\\Users\\joris\\school\\2019\\Cloud applications\\CA1819-ARealm\\src\\backend\\WebAPI\\Services\\Services.csproj"
+            },
+            "C:\\Users\\joris\\school\\2019\\Cloud applications\\CA1819-ARealm\\src\\backend\\WebAPI\\ViewModels\\ViewModels.csproj": {
+              "projectPath": "C:\\Users\\joris\\school\\2019\\Cloud applications\\CA1819-ARealm\\src\\backend\\WebAPI\\ViewModels\\ViewModels.csproj"
             }
           }
         }

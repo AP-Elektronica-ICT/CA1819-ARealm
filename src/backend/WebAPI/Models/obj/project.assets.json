@@ -5258,6 +5258,16 @@
         "runtime": {
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
+      },
+      "ViewModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/ViewModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ViewModels.dll": {}
+        }
       }
     }
   },
@@ -13563,13 +13573,19 @@
         "windowsazure.storage.8.1.4.nupkg.sha512",
         "windowsazure.storage.nuspec"
       ]
+    },
+    "ViewModels/1.0.0": {
+      "type": "project",
+      "path": "../ViewModels/ViewModels.csproj",
+      "msbuildProject": "../ViewModels/ViewModels.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
       "Microsoft.AspNetCore.All >= 2.1.5",
       "Microsoft.NETCore.App >= 2.1.0",
-      "Newtonsoft.Json >= 11.0.2"
+      "Newtonsoft.Json >= 11.0.2",
+      "ViewModels >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -13601,7 +13617,11 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\joris\\school\\2019\\Cloud applications\\CA1819-ARealm\\src\\backend\\WebAPI\\ViewModels\\ViewModels.csproj": {
+              "projectPath": "C:\\Users\\joris\\school\\2019\\Cloud applications\\CA1819-ARealm\\src\\backend\\WebAPI\\ViewModels\\ViewModels.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

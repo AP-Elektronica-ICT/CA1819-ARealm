@@ -30,7 +30,8 @@
           "Models": "1.0.0",
           "Newtonsoft.Json": "11.0.2",
           "Repositories": "1.0.0",
-          "Services": "1.0.0"
+          "Services": "1.0.0",
+          "ViewModels": "1.0.0"
         },
         "runtime": {
           "WebAPI.dll": {}
@@ -360,7 +361,8 @@
       "Models/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.All": "2.1.5",
-          "Newtonsoft.Json": "11.0.2"
+          "Newtonsoft.Json": "11.0.2",
+          "ViewModels": "1.0.0"
         },
         "runtime": {
           "Models.dll": {}
@@ -374,7 +376,8 @@
           "Microsoft.AspNetCore.All": "2.1.5",
           "Microsoft.EntityFrameworkCore": "2.1.4",
           "Models": "1.0.0",
-          "Newtonsoft.Json": "11.0.2"
+          "Newtonsoft.Json": "11.0.2",
+          "ViewModels": "1.0.0"
         },
         "runtime": {
           "Repositories.dll": {}
@@ -387,13 +390,22 @@
         "dependencies": {
           "Microsoft.AspNetCore.All": "2.1.5",
           "Newtonsoft.Json": "11.0.2",
-          "Repositories": "1.0.0"
+          "Repositories": "1.0.0",
+          "ViewModels": "1.0.0"
         },
         "runtime": {
           "Services.dll": {}
         },
         "compile": {
           "Services.dll": {}
+        }
+      },
+      "ViewModels/1.0.0": {
+        "runtime": {
+          "ViewModels.dll": {}
+        },
+        "compile": {
+          "ViewModels.dll": {}
         }
       },
       "Libuv/1.10.0": {
@@ -3970,6 +3982,11 @@
       "sha512": ""
     },
     "Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ViewModels/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

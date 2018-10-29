@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Models;
+using Repositories;
 
 namespace Services
 {
@@ -11,31 +12,25 @@ namespace Services
     {
         private static Random random;
         private int codeLength;
-        private SessionService _service;
+        private SessionService _sessionService;
 
-        public SessionCodeService(SessionService service)
+        public SessionCodeService(SessionService sessionService)
         {
-            _service = service;
+            _sessionService = sessionService;
             random = new Random();
             codeLength = 16;
         }
 
         public SessionCode Create()
         {
-            var sessionCode = RandomString(codeLength);
+            var sessionCode = RandomString(codeLength);          
             //create code
             var code = new SessionCode()
             {
                 Code = sessionCode
             };
-            //create session
-            var session = new Session()
-            {
-                SessionCode = sessionCode
-
-            };
-            _service.Create(session);
-            return code;
+            _sessionService.Create(code); // creates new session with code
+            return code; 
         }
 
         public string RandomString(int length)

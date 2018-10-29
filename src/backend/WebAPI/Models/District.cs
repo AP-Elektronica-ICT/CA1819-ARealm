@@ -1,17 +1,23 @@
+using Newtonsoft.Json;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Models
 {
     public class District
     {
-        public long Id{get;set;}
-        public Task Task{get;set;}
-        public Session Session{get;set;}
+        public long Id {get;set;}
 
-        //public long StateId {get;set;}
+        [ForeignKey("Task")]
+        public long TaskId { get; set; }
+        public Task Task{get;set;}
+
+        [ForeignKey("Session")]
+        public long? SessionId { get; set; } //nullable
+        [JsonIgnore]
+        public Session Session{get;set;} 
 
         //CurrentStateString voor het opslagen van de current state v/h district:
-        public string CurrentStateString {get;set;}
+        public string Title {get;set;}
         [NotMapped]
         public IDistrictState CurrentState{get;set;}
 

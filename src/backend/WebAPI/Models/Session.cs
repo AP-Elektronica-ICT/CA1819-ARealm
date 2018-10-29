@@ -51,11 +51,12 @@ namespace Models
     public class Session
     {
         public long Id {get;set;}
-        public string SessionCode{get;set;}
-        [JsonIgnore]
         public ICollection<Team> Teams {get;set;}
 
-        public List<District> Districts {get;set;}
+        public SessionCode SessionCode { get; set; }
+
+        public ICollection<District> Districts {get;set;}
+        //public ICollection<District> UnlockedDistricts { get; set; }
 
         //String voor state op te slagen:
         public string CurrentStateString{get;set;}

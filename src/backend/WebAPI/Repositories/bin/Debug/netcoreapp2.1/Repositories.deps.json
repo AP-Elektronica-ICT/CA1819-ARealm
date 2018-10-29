@@ -9,7 +9,8 @@
       "Repositories/1.0.0": {
         "dependencies": {
           "Microsoft.NETCore.App": "2.1.0",
-          "Models": "1.0.0"
+          "Models": "1.0.0",
+          "ViewModels": "1.0.0"
         },
         "runtime": {
           "Repositories.dll": {}
@@ -42,8 +43,16 @@
         }
       },
       "Models/1.0.0": {
+        "dependencies": {
+          "ViewModels": "1.0.0"
+        },
         "runtime": {
           "Models.dll": {}
+        }
+      },
+      "ViewModels/1.0.0": {
+        "runtime": {
+          "ViewModels.dll": {}
         }
       }
     }
@@ -104,6 +113,11 @@
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
     },
     "Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ViewModels/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
