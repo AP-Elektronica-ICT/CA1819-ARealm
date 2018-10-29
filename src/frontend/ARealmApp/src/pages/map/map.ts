@@ -1,3 +1,4 @@
+import { PhotoTaskPage } from './../photo-task/photo-task';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { SetupPage } from '../setup/setup';
@@ -37,6 +38,9 @@ export class MapPage {
   }
   gotoPuzzleTask(){
     this.navCtrl.push(PuzzleTaskPage);
+  }
+  gotoPhotoTask(){
+    this.navCtrl.push(PhotoTaskPage);
   }
 
 }

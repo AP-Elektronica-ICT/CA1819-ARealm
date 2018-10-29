@@ -1,10 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
-import { MapPage } from '../map/map';
 import { SetupPage } from '../setup/setup';
-import { PuzzleTaskPage } from '../puzzle-task/puzzle-task';
-import { PhotoTaskPage } from '../photo-task/photo-task';
 
 /**
  * Generated class for the RegistrationPage page.
@@ -27,16 +23,6 @@ export class RegistrationPage {
     console.log('ionViewDidLoad RegistrationPage');
   }
 
-  
 
-  gotoMap(){
-    this.navCtrl.push(MapPage);
-  }
-  gotoPuzzleTask(){
-    this.navCtrl.push(PuzzleTaskPage);
-  }
-  gotoPhotoTask(){
-    this.navCtrl.push(PhotoTaskPage);
-  }
 
 }
